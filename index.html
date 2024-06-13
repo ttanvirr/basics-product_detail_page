@@ -20,57 +20,61 @@
     <body>
         <main>
             <div class="container">
-                <div class="card">
-                    <!-- card left -->
-                    <div class="product-images">
-                        <div class="image-display">
-                            <div class="image-showcase">
-                                <img src="/images/tshirt01.jpg" alt="T shirt" />
-                                <img src="/images/tshirt02.jpg" alt="T shirt" />
-                                <img src="/images/tshirt03.jpg" alt="T shirt" />
-                                <img src="/images/tshirt04.jpg" alt="T shirt" />
-                                <img src="/images/tshirt05.jpg" alt="T shirt" />
-                            </div>
-                        </div>
-                        <div class="image-select">
-                            <div class="image-item">
-                                <a href="#" data-id="1">
+                <section class="product-detail-wrapper">
+                    <!-- column left -->
+                    <div class="column-left">
+                        <div class="product-display">
+                            <div class="product-display-styles">
+                                <div class="image-wrapper">
                                     <img
                                         src="/images/tshirt01.jpg"
                                         alt="T shirt" />
-                                </a>
-                            </div>
-                            <div class="image-item">
-                                <a href="#" data-id="2">
                                     <img
                                         src="/images/tshirt02.jpg"
                                         alt="T shirt" />
-                                </a>
-                            </div>
-                            <div class="image-item">
-                                <a href="#" data-id="3">
                                     <img
                                         src="/images/tshirt03.jpg"
                                         alt="T shirt" />
-                                </a>
-                            </div>
-                            <div class="image-item">
-                                <a href="#" data-id="4">
                                     <img
                                         src="/images/tshirt04.jpg"
                                         alt="T shirt" />
-                                </a>
-                            </div>
-                            <div class="image-item">
-                                <a href="#" data-id="5">
                                     <img
                                         src="/images/tshirt05.jpg"
                                         alt="T shirt" />
-                                </a>
+                                </div>
+                            </div>
+                            <div class="product-display-colors">
+                                <picture>
+                                    <img
+                                        src="/images/sweat-shirt_blakish_front_and_back.png"
+                                        alt="Blackish sweatshirt" />
+                                </picture>
                             </div>
                         </div>
+                        <div class="product-styles-buttons">
+                            <button class="image-btn" data-id="1">
+                                <img src="/images/tshirt01.jpg" alt="T shirt" />
+                            </button>
+
+                            <button class="image-btn" data-id="2">
+                                <img src="/images/tshirt02.jpg" alt="T shirt" />
+                            </button>
+
+                            <button class="image-btn" data-id="3">
+                                <img src="/images/tshirt03.jpg" alt="T shirt" />
+                            </button>
+
+                            <button class="image-btn" data-id="4">
+                                <img src="/images/tshirt04.jpg" alt="T shirt" />
+                            </button>
+
+                            <button class="image-btn" data-id="5">
+                                <img src="/images/tshirt05.jpg" alt="T shirt" />
+                            </button>
+                        </div>
+                        .product-select
                     </div>
-                    <!-- card right -->
+                    <!-- column right -->
                     <div class="product-content">
                         <h2 class="product-title">T-Shirt</h2>
                         <a href="#" class="product-link">visit t-shirt store</a>
@@ -93,6 +97,28 @@
                                 <span>$249.00 (5%)</span>
                             </p>
                         </div>
+                        <div class="product-type">
+                            <h3>Product</h3>
+                            <button
+                                class="btn btn-select selected"
+                                type="button">
+                                Sweatshirt
+                            </button>
+                        </div>
+                        <div class="product-color">
+                            <h3>Color</h3>
+                            <div class="color-buttons">
+                                <button
+                                    type="button"
+                                    class="btn color-btn blackish btn-select selected"></button>
+                                <button
+                                    type="button"
+                                    class="btn color-btn grey btn-select"></button>
+                                <button
+                                    type="button"
+                                    class="btn color-btn bluish btn-select"></button>
+                            </div>
+                        </div>
                         <div class="product-detail">
                             <h2>about this item:</h2>
                             <p>
@@ -108,10 +134,6 @@
                                 Dignissimos, labore suscipit. Unde.
                             </p>
                             <ul>
-                                <li>
-                                    Color:
-                                    <span>Black</span>
-                                </li>
                                 <li>
                                     Available:
                                     <span>in stock</span>
@@ -159,9 +181,9 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </main>
-        <script src="/main.js"></script>
+        <!-- <script src="/main.js"></script> -->
     </body>
 </html>

@@ -1,3 +1,16 @@
+:root {
+    --primary-color: #f3873d;
+    --secondary-color: #14b0da;
+    --body-bg-color: #ffffff;
+    --text-color: #333333;
+    --text-light-color: #85888d;
+
+    --ff-body: "Poppins", sans-serif;
+    --ff-highlight: "Nunito", sans-serif;
+
+    --fs-400: 1rem;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,8 +18,10 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #fff;
-    font-family: "Open Sans", sans-serif;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
     line-height: 1.4;
 }
 
@@ -21,6 +36,56 @@ iframe {
     max-inline-size: 100%;
     block-size: auto;
     display: block;
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: transparent;
+    color: #666;
+    border: 2px solid transparent;
+}
+
+.btn-select {
+    padding: 0.5rem 1rem;
+    border-color: #aaa;
+}
+
+.btn-select.selected {
+    border-color: #3a7cff;
+}
+
+.color-btn {
+    width: 3rem;
+    height: 3rem;
+    border-color: #efefef;
+    border-radius: 50%;
+    position: relative;
+}
+
+.color-btn::after {
+    content: "";
+    position: absolute;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.color-btn.blackish::after {
+    background: #393939;
+}
+.color-btn.grey::after {
+    background: #bebebe;
+}
+.color-btn.bluish::after {
+    background: #372cad;
 }
 
 .image-display {
@@ -216,7 +281,6 @@ iframe {
         min-height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     .card {
         display: grid;
